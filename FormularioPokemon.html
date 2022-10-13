@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: cyan ;">
+    <form action="Pokemon" style="font-family:Arial ;">
+        <br>
+        <h1 style="font-family: Arial ;"><font color="Red"><center>Verifica si eres un maestro pokémon</center></font></h1>
+        <fieldset>
+            <legend>Datos Personales</legend>
+            Nombre <input type="text">
+            <br>
+            Apellido Paterno<input type="text">
+            <br>
+            Apellido Materno <input type="text">
+            <br>
+            Edad <input type="text">
+            <br>
+            Fecha de nacimiento <input type="date">
+        </fieldset>
+        <br>
+        <hr>
+        <br>
+        <fieldset>
+            <legend>Registro</legend>
+
+            Ingrese un correo electrónico <input type="text">
+            <br>
+            Ingrese una contraseña <input type="password">
+            <br>
+            Confirme su contraseña <input type="password">
+        </fieldset>
+        <br>
+        <hr>
+        <br>
+        <fieldset>
+        
+        <legend>Inicio de sesión</legend>
+        <br>
+        <label for="form-login">Ingrese su correo</label>
+        <input type="text" name="correo" id="form-inicio" maxlength="10">
+        <br>
+        <label for="labelcontrasena">Contraseña:</label>
+        <input type="password" name="contrasena" maxlength="12" id="form-contrasena">
+    </fieldset>
+
+        <hr>
+
+        <h1><mark>Cuestionario Pokémon</mark></h1>
+        
+       <p>En este formulario se encuentran diversas preguntas las cuales se contestaran dependiendo de tu conocimiento <mark>pokémon</mark> de las primeras 3 generaciones </p>
+        <hr>
+        <p>Generación favorita</p>
+
+        <ol>
+            <li><input type="radio" name="primera" value="primera"> Primera generación (Pokémon Rojo y Azul)</li>
+            <li><input type="radio" name="segunda" value="segundageneración"> Segunda Generación (Pokémon Oro, Plata y Cristal)</li>
+            <li><input type="radio" name="tercera" value="tercerageneracion"> Tercera generación (Pokémon Esmeralda, Ruby y Záfiro)</li>
+        </ol>
+        <hr>
+        <p>¿Cuántos pokemones existen en la primera generación?</p>
+
+        <ol>
+            <input type="radio" name="150pokemones" value="150"><li>150 pokemones</li>
+            <input type="radio" name="200pokemones" value="200"><li>200 pokemones</li>
+            <input type="radio" name="151pokemones" value="151" ><li>151 pokemon</li>
+        </ol>
+        <hr>
+        <p>Si tu respuesta fue 151, ¿Por qué?</p>
+
+        <textarea name="respuestapokemon1" cols="30" rows="10" maxlength="200"></textarea>
+        <hr>
+        <label for="">Adjunta una foto de Pikachu</label>
+        <input type="file" name="fotopikachu">
+
+        <p>Selecciona el pokémon tipo hoja
+        <select name="pokemoneslista" id="">
+            <option value="Charmander">Charmander</option>
+            <option value="Mewtwo">Mewtwo</option>
+            <option value="Snorlax">Snorlax</option>
+            <option value="Sandrew">Sandrew</option>
+            <option value="Bulbasaur">Bulbasaur</option>
+        </select>
+        </p>
+
+        <p>Presiona aquía si ya contestaste todas las preguntas
+        <button type="submit">Enviar respuestas</button>
+        </p>
+    </form>
+</body>
+</html>
